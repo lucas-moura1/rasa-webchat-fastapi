@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa-WebChat</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+</body>
+    <script>
+        !(function () {
+            let e = document.createElement("script"),
+            t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+            "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+            (e.async = !0),
+            (e.onload = () => {
+                window.WebChat.default(
+                {
+                    initPayload: "/greet",
+                    customData: { language: "pt-br" },
+                    socketUrl: "http://localhost:5005",
+                    title: "ChatLucas",
+                    showMessageDate: true,
+                    showFullScreenButton: true,
+                    params: {
+                        storage: "session"
+                    }
+                },
+                null
+                );
+            }),
+            t.insertBefore(e, t.firstChild);
+        })();
+      </script>
+</html>
