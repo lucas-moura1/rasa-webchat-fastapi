@@ -1,0 +1,32 @@
+version: "3.6"
+
+services:
+    weather_api:
+        build: ./apis/weather_api
+        volumes:
+            - ./apis/weather_api:/app/
+        # command: sh -c "pdm install && pdm run dev"
+        command: pdm run dev
+        env_file:
+            - .env
+        ports:
+            - 8000:8000
+
+    rasa_webchat:
+        build: ./rasa-webchat
+        command: run --debug --cors "*"
+        ports:
+            - 5005:5005
+        depends_on:
+            - rasa_actions
+            - weather_api
+
+    rasa_actions:
+        build: ./rasa-webchat
+        command: run actions --debug --cors "*"
+        environment:
+            weather_api: http://weather_api:8000/api/weather
+        ports:
+            - 5055:5055
+        depends_on:
+            - weather_api
