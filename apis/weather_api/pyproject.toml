@@ -1,0 +1,29 @@
+[project]
+name = "weather_api"
+version = "1.0"
+description = "Api responsable for getting weather data"
+authors = [
+    {name = "Lucas Moura"},
+]
+dependencies = [
+    "fastapi~=0.68",
+    "uvicorn~=0.15",
+    "requests",
+    "asgi-correlation-id",
+]
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.urls]
+homepage = ""
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+
+[tool.pdm.scripts]
+dev = "uvicorn main:app --reload --host 0.0.0.0"
+start_server = "uvicorn main:app --host 0.0.0.0"
