@@ -1,0 +1,15 @@
+version: "2.0"
+
+stories:
+
+- story: Saudação
+  steps:
+  - intent: greet
+  - action: action_greet
+
+- story: Previsão do tempo
+  steps:
+  - intent: weather_forecast
+  - action: action_weather_forecast
+
+

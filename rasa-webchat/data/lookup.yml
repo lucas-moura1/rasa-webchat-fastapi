@@ -1,0 +1,24 @@
+version: "2.0"
+
+nlu:
+- lookup: day
+  examples: |
+    - hoje
+    - amanhã
+    - depois de amanhã
+    - segunda-feira
+    - terça-feira
+    - terca-feira
+    - quarta-feira
+    - quinta-feira
+    - sexta-feira
+    - sábado
+    - domingo
+    - segunda
+    - terça
+    - terca
+    - quarta
+    - quinta
+    - sexta
+    - sábado
+    - domingo

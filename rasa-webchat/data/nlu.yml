@@ -1,0 +1,46 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Oi
+    - Olá
+    - E ae
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+
+- intent: despedida
+  examples: |
+    - Até mais
+    - Tchau
+    - Vlw
+    - Valeu
+    - Obrigado
+
+- intent: desafio_bot
+  examples: |
+    - Voce é um bot?
+    - vc é um humano?
+    - estou falando com um bot?
+    - estou falando com um humano?
+    - quem é voce?
+
+- intent: weather_forecast
+  examples: |
+    - poderia me informar a previsão do tempo de Niterói?
+    - poderia me informar a previsão do tempo de Saquarema para [amanhã](day)?
+    - gostaria de saber a previsao do tempo para Florianópolis para [segunda-feira](day)?
+    - gostaria da previsão do tempo de Curitiba para [domingo](day)?
+    - gostaria da previsão do tempo de Londres [terça](day)?
+    - quero a previsao do tempo de Petrópolis para [hoje](day)?
+    - quero da previsao do tempo de Petrópolis para [quinta](day)
+    - previsão do tempo para São Paulo na [quarta-feira](day)
+    - previsão do tempo de Teresópolis na [segunda](day)
+    - previsao do tempo para mage na [quinta-feira](day)
+    - previsao do tempo de buzios para [sexta-feira](day)
+    - previsao do tempo para cidade de Fortaleza [sabado](day)?
+    - cidade de Natal [quarta](day) previsao do tempo
+    - Boston previsao do tempo para [terça](day)
+    - quero a previsao do tempo para [sexta](day) da cidade de Londres
+    - qual a previsão do tempo para Natal
