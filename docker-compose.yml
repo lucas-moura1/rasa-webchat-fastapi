@@ -5,6 +5,7 @@ services:
         build: ./apis/weather_api
         volumes:
             - ./apis/weather_api:/app/
+            - /app/__pypackages__
         # command: sh -c "pdm install && pdm run dev"
         command: pdm run dev
         env_file:
