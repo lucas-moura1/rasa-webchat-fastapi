@@ -2,8 +2,8 @@ version: "2.0"
 
 intents:
   - greet
-  - despedida
-  - desafio_bot
+  - bye
+  - challenge_bot
   - weather_forecast
 
 entities:
@@ -23,12 +23,12 @@ responses:
   utter_problem_weather_forecast:
   - text: Ops, aconteceu algum problema. Revise os dados inseridos e tente novamente.
 
-  utter_despedida:
+  utter_bye:
   - text: Valeu
   - text: Até Breve
   - text: Espero ter ajudado! Até!!!
 
-  utter_eu_sou_bot:
+  utter_i_am_bot:
   - text: Eu sou um bot, criado pelo Rasa e implementado nesse projeto pelo Lucas.
 
   utter_fallback:
@@ -36,9 +36,6 @@ responses:
       Ops, não entendi oq vc quis dizer, me desculpa!
 
       Atualmente, consigo te ajudar apenas com previsão do tempo
-
-  utter_test:
-  - text: Booaaaa
 
 actions:
   - action_greet

@@ -9,10 +9,10 @@ rules:
 
 - rule: Quando se despede
   steps:
-    - intent: despedida
-    - action: utter_despedida
+    - intent: bye
+    - action: utter_bye
 
 - rule: Pergunta sobre quem é o bot
   steps:
-    - intent: desafio_bot
-    - action: utter_eu_sou_bot
+    - intent: challenge_bot
+    - action: utter_i_am_bot

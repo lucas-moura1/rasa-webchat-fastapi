@@ -10,7 +10,7 @@ nlu:
     - Boa tarde
     - Boa noite
 
-- intent: despedida
+- intent: bye
   examples: |
     - Até mais
     - Tchau
@@ -18,13 +18,16 @@ nlu:
     - Valeu
     - Obrigado
 
-- intent: desafio_bot
+- intent: challenge_bot
   examples: |
     - Voce é um bot?
     - vc é um humano?
     - estou falando com um bot?
     - estou falando com um humano?
-    - quem é voce?
+    - quem é você?
+    - quem é vc?
+    - com quem eu estou falando?
+    - quem ta falando?
 
 - intent: weather_forecast
   examples: |
